@@ -53,7 +53,8 @@ const Card = ({ id, text, index, moveCard, deleteItem }) => {
   drag(drop(ref))
   return (
     <div ref={ref} style={{ ...style, opacity }} className='list-item'>
-      {text}
+      <h6>{text}</h6>
+      <hr/>
       <div>
         <button
           className='btn btn-danger'
